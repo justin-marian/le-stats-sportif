@@ -62,12 +62,13 @@ The service is **multithreaded** and processes requests using a job queue manage
 
 ## Input/Output Structure
 
-The input and output formats can be observed in the `tests` folder. 
+The input and output formats can be observed in the `tests` folder.
+The server response format is determined by the queried API endpoint (e.g., `/api/states_mean`, `/api/best5`).
 
 | Type   | Description                                                                                                     |
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| Input  | The input follows the format of one of the predefined questions. The server response format is determined by the queried endpoint (e.g., `/api/states_mean`, `/api/best5`). |
-| Output | The output format varies based on the specific API endpoint queried (e.g., `/api/state_mean`, `/api/global_mean`). |
+| Input  | The input follows the format of one of the predefined questions.                                                |
+| Output | The output format varies based on the specific API endpoint queried.                                            |
 
 ## Logging
 
